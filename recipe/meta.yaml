@@ -1,5 +1,5 @@
 {% set name = "montydb" %}
-{% set version = "2.5.0" %}
+{% set version = "2.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/montydb-{{ version }}.tar.gz
-  sha256: 4f9666fd1a33a77851ebf22d3b0f4f73037206b79d1e2d1de52a8bfa2c27bc5a
+  sha256: 55d935c10872173007ed7281511259a43ac418878495b0b0b8540b51e222085d
 
 build:
   noarch: python
