@@ -1,11 +1,11 @@
-About montydb
-=============
+About montydb-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/montydb-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/davidlatwe/montydb
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/montydb-feedstock/blob/main/LICENSE.txt)
 
 Summary: Monty, Mongo tinified. MongoDB implemented in Python !
 
