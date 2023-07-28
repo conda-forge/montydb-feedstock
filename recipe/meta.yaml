@@ -1,5 +1,5 @@
 {% set name = "montydb" %}
-{% set version = "2.5.1" %}
+{% set version = "2.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/montydb-{{ version }}.tar.gz
-  sha256: 55d935c10872173007ed7281511259a43ac418878495b0b0b8540b51e222085d
+  sha256: b9857e3fec14fedaa48f0fd14004b8b4b9486ff0612cf055f778bfb50a03d774
 
 build:
   noarch: python
@@ -18,9 +18,9 @@ requirements:
   host:
     - pip
     - poetry-core >=1.0.0
-    - python >=3.6,<3.11
+    - python >=3.7,<3.12
   run:
-    - python >=3.6,<3.11
+    - python >=3.7,<3.12
 
 test:
   imports:
