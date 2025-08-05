@@ -1,0 +1,44 @@
+schema_version: 1
+
+context:
+  name: montydb
+  version: 2.5.4
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/montydb-${{ version }}.tar.gz
+  sha256: e19386ccaed146103292b9a92fad6803d0561182aa074c34ddf08b21df28b103
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - pip
+    - poetry-core >=1.0.0
+    - python ${{ python_min }}.*
+  run:
+    - python >=${{ python_min }}
+
+tests:
+  - python:
+      imports:
+        - montydb
+      pip_check: true
+      python_version: ${{ python_min }}.*
+
+about:
+  summary: Monty, Mongo tinified. MongoDB implemented in Python !
+  license: BSD-3-Clause
+  license_file:
+    - LICENSE
+  homepage: https://github.com/davidlatwe/montydb
+
+extra:
+  recipe-maintainers:
+    - thewchan
