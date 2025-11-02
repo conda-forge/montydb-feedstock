@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: montydb
-  version: "2.5.5"
+  version: "2.5.6"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/montydb-${{ version }}.tar.gz
-  sha256: 1f7ac08f6af3822d9454d21eb20f1bfc935ecfa5af901fdeb1d265b171911618
+  sha256: 9f7f2d9e99d42ba1214d71e3af67a3398f2a26b9443535b02a9aba138aa5d8ab
 
 build:
   number: 0
